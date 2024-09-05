@@ -1,0 +1,33 @@
+function btnPress (){
+      let btn = this;
+      userFlash(btn);
+      //console.log("btn was pressed");
+
+      userColor = btn.getAttribute("id");
+      userSeq.push(userColor);
+
+      checkAns(userSeq.length-1);
+
+    }
+    let allBtns = document.querySelectorAll(".btn");
+    for(btn of allBtns){
+      btn.addEventListener("click" , btnPress);
+    }
+
+    function reset(){
+      start = false ;
+      gameSeq = [];
+      userSeq = [];
+      level = 0;
+    }
+
+     document.querySelector("body").style.backgroundColor = "red";
+        setTimeout(function(){
+          document.querySelector("body").style.backgroundColor = "white";
+        } , 150)
+        reset();
+      }
+    }
+    else{
+        h2.innerText = `Game Over!Press any key to start`;
+        h3.innerText = `Your score was : ${level}';

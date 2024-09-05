@@ -1,0 +1,28 @@
+body{
+    text-align: center;
+}
+.btn{
+    height: 200px;
+    width: 200px;
+    border-radius: 20%;
+    border: 10px solid black;
+    margin: 2rem;
+
+}
+.btn-container{
+    display: flex;
+    justify-content: center;
+
+}
+.yellow{
+    background-color: rgba(255, 255, 0, 0.806);
+}
+.red{
+    background-color:rgba(255, 0, 0, 0.763);
+}
+.green{
+    background-color: aquamarine;
+}
+.blue{
+    background-color: skyblue;
+}
